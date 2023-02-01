@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/denis-yu/wechatdog/tree/main/bootstrap"
+	"github.com/denis-yu/wechatdog/bootstrap"
 )
 
 func main() {
