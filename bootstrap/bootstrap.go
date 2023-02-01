@@ -1,7 +1,7 @@
 package bootstrap
 
 import (
-	"github.com/denis-yu/wechatbot/handlers"
+	"github.com/denis-yu/wechatdog/handlers"
 	"github.com/eatmoreapple/openwechat"
 	"log"
 )
