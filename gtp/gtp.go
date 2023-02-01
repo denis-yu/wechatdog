@@ -62,8 +62,8 @@ func Completions(msg string) (string, error) {
 		return "", err
 	}
 
-// 	apiKey := config.LoadConfig().ApiKey
-    apiKey := os.Getenv("OPENAI_API_KEY")
+	apiKey := config.LoadConfig().ApiKey
+//     apiKey := os.Getenv("OPENAI_API_KEY")
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+apiKey)
 	client := &http.Client{}
