@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 )
 
 const BASEURL = "https://api.openai.com/v1/"
@@ -61,7 +62,8 @@ func Completions(msg string) (string, error) {
 		return "", err
 	}
 
-	apiKey := config.LoadConfig().ApiKey
+// 	apiKey := config.LoadConfig().ApiKey
+    apiKey := os.Getenv("OPENAI_API_KEY")
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+apiKey)
 	client := &http.Client{}
