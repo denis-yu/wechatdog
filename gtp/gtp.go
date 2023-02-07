@@ -45,7 +45,7 @@ func Completions(msg string) (string, error) {
 		Model:            "text-davinci-003",
 		Prompt:           msg,
 		MaxTokens:        2048,
-		Temperature:      0.7,
+		Temperature:      0,
 		TopP:             1,
 		FrequencyPenalty: 0,
 		PresencePenalty:  0,
