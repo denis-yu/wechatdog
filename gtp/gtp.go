@@ -42,7 +42,7 @@ type ChatGPTRequestBody struct {
 //-d '{"model": "text-davinci-003", "prompt": "give me good song", "temperature": 0, "max_tokens": 7}'
 func Completions(msg string) (string, error) {
 	requestBody := ChatGPTRequestBody{
-		Model:            "text-davinci-001",
+		Model:            "text-davinci-003",
 		Prompt:           msg,
 		MaxTokens:        2000,
 		Temperature:      0.7,
